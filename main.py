@@ -3,24 +3,33 @@
 except for '+' and '-'.
 """
 
-__author__ = "???"
+__author__ = "Britt Bannister"
 
 
 def add(x, y):
     """Add two integers."""
-    # your code here
-    return
+    return(x + y)
+
+
+print(add(2, 4))
 
 
 def multiply(x, y):
     """Multiply x with y using the add() function above."""
-    # your code here
-    return
+    if(y == 0):
+        return 0
+    if(y > 0):
+        return (add(x, multiply(x, y-1)))
+    if (y < 0):
+        return -multiply(x, -y)
+
+
+print(multiply(6, -8))
 
 
 def power(x, n):
     """Raise x to power n, where n >= 0, using the functions above."""
-    # your code here
+
     return
 
 
